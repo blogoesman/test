@@ -1,0 +1,708 @@
+#load-page-maura { width:100%; height:100%; position:fixed; left:0; top:0; z-index:+100000; margin: 0; padding: 0;  overflow:hidden; text-align:center; background:#111; }
+
+.center_point_1 {
+  position: absolute;
+  background-color: red;
+  height: 500px;
+  width: 5px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.center_point_2 {
+  position: absolute;
+  background-color: red;
+  height: 5px;
+  width: 600px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.model {
+  width: 600px;
+  height: 443x;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/194136/Screenshot_at_déc._12_22-42-54.png');
+}
+
+.all_circle {
+  position: absolute;
+  top: calc(50%);
+  left: calc(50%);
+  transform: translate(-50%, -50%);
+  height: 443px;
+  width: 501px;
+}
+.circle {
+  border: 10px solid #c606d2;
+  box-shadow:inset 0px 0px 20px 10px #384553;
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+}
+
+/* Start Center part of circle */
+.one {
+  position: absolute;
+  top: 186px;
+  left: 214px;
+}
+
+.two {
+  position: absolute;
+  top: 124px;
+  left: 178px;
+  animation: two_a 3s linear infinite alternate;
+}
+
+.three {
+  position: absolute;
+  top: 186px;
+  left: 142px;
+  animation: three_a 3s linear infinite alternate;
+}
+
+.four {
+  position: absolute;
+  top: 247px;
+  left: 178px;
+  animation: four_a 3s linear infinite alternate;
+}
+
+.five {
+  position: absolute;
+  top: 124px;
+  left: 249px;
+  animation: five_a 3s linear infinite alternate;
+}
+
+.six {
+  position: absolute;
+  top: 186px;
+  left: 285px;
+  animation: six_a 3s linear infinite alternate;
+}
+
+.seven {
+  position: absolute;
+  top: 247px;
+  left: 249px;
+  animation: seven_a 3s linear infinite alternate;
+}
+
+@keyframes two_a {
+  from {
+    left:;
+    top:;
+  }
+  to {
+    left: 229px;
+    top: 155px;
+  }
+}
+
+@keyframes three_a {
+  from {
+    left:;
+    top:;
+  }
+  to {
+    left: 180px;
+    top: 186px;
+  }
+}
+
+@keyframes four_a {
+  from {
+    left:;
+    top:;
+  }
+  to {
+    left: 229px;
+    top: 214px;
+  }
+}
+
+@keyframes five_a {
+  from {
+    left:;
+    top:;
+  }
+  to {
+    left: 200px;
+    top: 155px;
+  }
+}
+
+@keyframes six_a {
+  from {
+    left:;
+    top:;
+  }
+  to {
+    left: 249px;
+    top: 186px;
+  }
+}
+
+@keyframes seven_a {
+  from {
+    left:;
+    top:;
+  }
+  to {
+    left: 200px;
+    top: 214px;
+  }
+}
+/* End Center part of circle */
+
+/* Start Second part of circle */
+.eight {
+  position: absolute;
+  top: 62px;
+  left: 214px;
+  animation: eight_a 3s linear infinite alternate;
+}
+
+.nine {
+  position: absolute;
+  top: 62px;
+  left: 142px;
+  animation: nine_a 3s linear infinite alternate;
+}
+
+.ten {
+  position: absolute;
+  top: 124px;
+  left: 107px;
+  animation: ten_a 3s linear infinite alternate;
+}
+
+.eleven {
+  position: absolute;
+  top: 186px;
+  left: 71px;
+  animation: eleven_a 3s linear infinite alternate;
+}
+
+.twelve {
+  position: absolute;
+  top: 247px;
+  left: 107px;
+  animation: twelve_a 3s linear infinite alternate;
+}
+
+.thirteen {
+  position: absolute;
+  top: 308px;
+  left: 142px;
+  animation: thirteen_a 3s linear infinite alternate;
+}
+
+.fourteen {
+  position: absolute;
+  top: 308px;
+  left: 214px;
+  animation: fourteen_a 3s linear infinite alternate;;
+}
+
+.fifteen {
+  position: absolute;
+  top: 308px;
+  left: 285px;
+  animation: fifteen_a 3s linear infinite alternate;
+}
+
+.sixteen {
+  position: absolute;
+  top: 247px;
+  left: 320px;
+  animation: sixteen_a 3s linear infinite alternate;
+}
+
+.seventeen {
+  position: absolute;
+  top: 186px;
+  left: 356px;
+  animation: seventeen_a 3s linear infinite alternate;
+}
+
+.eighteen {
+  position: absolute;
+  top: 124px;
+  left: 320px;
+  animation: eighteen_a 3s linear infinite alternate;
+}
+
+.nineteen {
+  position: absolute;
+  top: 62px;
+  left: 285px;
+  animation: nineteen_a 3s linear infinite alternate;
+}
+
+@keyframes eight_a {
+  from {
+    left:;
+    top:;
+  }
+  to {
+    top: 125px;
+    left: 214px;
+  }
+}
+
+@keyframes nine_a {
+  from {
+    left:;
+    top:;
+  }
+  to {
+    left: 179px;
+    top: 125px;
+  }
+}
+
+@keyframes ten_a {
+  from {
+    left:;
+    top:;
+  }
+  to {
+    left: 162px;
+    top: 157px;
+  }
+}
+
+@keyframes eleven_a {
+  from {
+    left:;
+    top:;
+  }
+  to {
+    left: 146px;
+    top: 186px;
+  }
+}
+
+@keyframes twelve_a {
+  from {
+    left:;
+    top:;
+  }
+  to {
+    left: 162px;
+    top: 216px;
+  }
+}
+
+@keyframes thirteen_a {
+  from {
+    left:;
+    top:;
+  }
+  to {
+    left: 179px;
+    top: 246px;
+  }
+}
+
+@keyframes fourteen_a {
+  from {
+    left:;
+    top:;
+  }
+  to {
+    left: 214px;
+    top: 246px;
+  }
+}
+
+@keyframes fifteen_a {
+  from {
+    left:;
+    top:;
+  }
+  to {
+    left: 248px;
+    top: 246px;
+  }
+}
+
+@keyframes sixteen_a {
+  from {
+    left:;
+    top:;
+  }
+  to {
+    left: 265px;
+    top: 216px;
+  }
+}
+
+@keyframes seventeen_a {
+  from {
+    left:;
+    top:;
+  }
+  to {
+    top: 186px;
+    left: 283px;
+  }
+}
+
+@keyframes eighteen_a {
+  from {
+    left:;
+    top:;
+  }
+  to {
+    left: 267px;
+    top: 157px;
+  }
+}
+
+@keyframes nineteen_a {
+  from {
+    left:;
+    top:;
+  }
+  to {
+    left: 248px;
+    top: 125px;
+  }
+}
+/* End Second part of circle */
+
+/* Start Third part of circle */
+.twenty {
+  position: absolute;
+  top: 0px;
+  left: 178px;
+  animation: twenty_a 3s linear infinite alternate;
+}
+
+.twenty-one {
+  position: absolute;
+  top: 0px;
+  left: 107px;
+  animation: twenty-one_a 3s linear infinite alternate;
+}
+
+.twenty-two {
+  position: absolute;
+  top: 62px;
+  left: 71px;
+  animation: twenty-two_a 3s linear infinite alternate;
+}
+
+
+.twenty-three {
+  position: absolute;
+  top: 124px;
+  left: 36px;
+  animation: twenty-three_a 3s linear infinite alternate;
+}
+
+.twenty-four {
+  position: absolute;
+  top: 186px;
+  left: 0px;
+  animation: twenty-four_a 3s linear infinite alternate;
+}
+
+.twenty-five {
+  position: absolute;
+  top: 247px;
+  left: 36px;
+  animation: twenty-five_a 3s linear infinite alternate;
+}
+
+.twenty-six {
+  position: absolute;
+  top: 308px;
+  left: 71px;
+  animation: twenty-six_a 3s linear infinite alternate;
+}
+
+.twenty-seven {
+  position: absolute;
+  top: 370px;
+  left: 107px;
+  animation: twenty-seven_a 3s linear infinite alternate;
+}
+
+.twenty-eight {
+  position: absolute;
+  top: 370px;
+  left: 178px;
+  animation: twenty-eight_a 3s linear infinite alternate;
+}
+
+.twenty-nine {
+  position: absolute;
+  top: 370px;
+  left: 249px;
+  animation: twenty-nine_a 3s linear infinite alternate;
+}
+
+.thirty {
+  position: absolute;
+  top: 370px;
+  left: 320px;
+  animation: thirty_a 3s linear infinite alternate;
+}
+
+.thirty-one {
+  position: absolute;
+  top: 308px;
+  left: 356px;
+  animation: thirty-one_a 3s linear infinite alternate;
+}
+
+.thirty-two {
+  position: absolute;
+  top: 247px;
+  left: 391px;
+  animation: thirty-two_a 3s linear infinite alternate;
+}
+
+.thirty-three {
+  position: absolute;
+  top: 186px;
+  left: 428px;
+  animation: thirty-three_a 3s linear infinite alternate;
+}
+
+.thirty-four {
+  position: absolute;
+  top: 124px;
+  left: 391px;
+  animation: thirty-four_a 3s linear infinite alternate;
+}
+
+.thirty-five {
+  position: absolute;
+  top: 62px;
+  left: 356px;
+  animation: thirty-five_a 3s linear infinite alternate;
+}
+
+.thirty-six {
+  position: absolute;
+  top: 0px;
+  left: 320px;
+  animation: thirty-six_a 3s linear infinite alternate;
+}
+
+.thirty-seven {
+  position: absolute;
+  top: 0px;
+  left: 249px;
+  animation: thirty-seven_a 3s linear infinite alternate;
+}
+@keyframes twenty_a {
+  from {
+    left:;
+    top:;
+  }
+  to {
+    left: 197px;
+    top: 95px;
+  }
+}
+
+@keyframes twenty-one_a {
+  from {
+    left:;
+    top:;
+  }
+  to {
+    left: 163px;
+    top: 95px;
+  }
+}
+
+@keyframes twenty-two_a {
+  from {
+    left:;
+    top:;
+  }
+  to {
+    left: 147px;
+    top: 125px;
+  }
+}
+
+@keyframes twenty-three_a {
+  from {
+    left:;
+    top:;
+  }
+  to {
+    left: 127px;
+    top: 155px;
+  }
+}
+
+@keyframes twenty-four_a {
+  from {
+    left:;
+    top:;
+  }
+  to {
+    left: 110px;
+    top: 186px;
+  }
+}
+
+@keyframes twenty-five_a {
+  from {
+    left:;
+    top:;
+  }
+  to {
+    left: 127px;
+    top: 215px;
+  }
+}
+
+@keyframes twenty-six_a {
+  from {
+    left:;
+    top:;
+  }
+  to {
+    left: 147px;
+    top: 245px;
+  }
+}
+
+@keyframes twenty-seven_a {
+  from {
+    left:;
+    top:;
+  }
+  to {
+    left: 163px;
+    top: 275px;
+  }
+}
+
+@keyframes twenty-eight_a {
+  from {
+    left:;
+    top:;
+  }
+  to {
+  left: 197px;
+    top: 275px;
+  }
+}
+
+@keyframes twenty-nine_a {
+  from {
+    left:;
+    top:;
+  }
+  to {
+    left: 232px;
+    top: 275px;
+  }
+}
+
+@keyframes thirty_a {
+  from {
+    left:;
+    top:;
+  }
+  to {
+    left: 266px;
+    top: 275px;
+  }
+}
+
+@keyframes thirty-one_a {
+  from {
+    left:;
+    top:;
+  }
+  to {
+    left: 284px;
+    top: 245px;
+  }
+}
+
+@keyframes thirty-two_a {
+  from {
+    left:;
+    top:;
+  }
+  to {
+    left: 300px;
+    top: 215px;
+  }
+}
+
+@keyframes thirty-three_a {
+  from {
+    left:;
+    top:;
+  }
+  to {
+    top: 186px;
+    left: 317px;
+  }
+}
+
+@keyframes thirty-four_a {
+  from {
+    left:;
+    top:;
+  }
+  to {
+    left: 300px;
+    top: 155px;
+  }
+}
+
+@keyframes thirty-five_a {
+  from {
+    left:;
+    top:;
+  }
+  to {
+    left: 284px;
+    top: 125px;
+  }
+}
+
+@keyframes thirty-six_a {
+  from {
+    left:;
+    top:;
+  }
+  to {
+    left: 266px;
+    top: 95px;
+  }
+}
+
+@keyframes thirty-seven_a {
+  from {
+    left:;
+    top:;
+  }
+  to {
+    left: 232px;
+    top: 95px;
+  }
+}
+/* End Third part of circle */
+.tulisan { position:centre; width:100%; height:20px; margin:90% auto; -webkit-font-smoothing:antialiased; font-family:'Julius Sans One',sans-serif; font-size:30px; font-weight:400; color:#eee; left:10%; top:5%; }
