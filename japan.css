@@ -1,0 +1,152 @@
+#load-page-maura { width:100%; height:100%; position:fixed; left:0; top:0; z-index:+100000; overflow:hidden; text-align:center; background:#111; }
+$size: 500px;
+$hole: 100px;
+
+@mixin setColor($color: red) {
+  &:before,
+  &:after {
+    background: $color;
+  }
+  div {
+    &:first-child {
+      &:before {
+        border-color: $color;
+      }      
+    }
+    
+    &:last-child {
+      border-color: $color;
+    }
+  }
+  
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: content-box;
+}
+.scene {
+  width: $size;
+  height: $size;
+  margin: 0 auto;
+
+}
+
+.wrap {
+  width: $size;
+  height: $size;
+  position: relative;
+  transform-style: preserve-3d;
+  animation: rotateWrap 30s linear infinite;
+}
+
+.el {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  overflow: hidden;
+
+  &:before {
+    content: '';
+    display: block;
+    background: yellow;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: $size / 2;
+    height: $size / 2;
+    clip-path: polygon(0 0, $size/4 $size/4, 0 $size/2, $size/2 $size/2, $size/2 0);
+  }
+  
+  &:after {
+    content: '';
+    display: block;
+    background: yellow;
+    width: $hole;
+    height: $hole;
+    border-radius: 50%;
+    position: absolute;
+    left: $size / 2 - ($hole / 2);
+    top: $size / 4 - ($hole / 2);
+  }
+  
+  div:first-child {
+    position: absolute;
+    width: $size / 2;
+    height: $size / 2;
+    right: 0;
+    top: 0;
+    overflow: hidden;
+
+    &:before {
+      content: '';
+      display: block;
+      border-radius: 50%;
+      width: $size / 2;
+      height: $size / 2;
+      border: $size / 2 solid yellow;
+      position: absolute;
+      left: $size * (-.75);
+      top: $size / (-2);
+    }
+
+
+  }
+  
+  div:last-child {
+    position: absolute;
+    width: $hole;
+    height: $hole;
+    border-radius: 50%;
+    border: (($size / 2 - $hole) / 2) solid yellow;
+    bottom: 0;
+    left: 25%;
+  }  
+}
+
+.el--1 {
+  @extend .el;
+  @include setColor(#E91E63); 
+  transform: rotateY(90deg) rotateZ(0deg);
+  animation: rotateZ1 5s linear infinite;
+}
+
+.el--2 {
+  @extend .el;
+  @include setColor(#448AFF);
+  transform: rotateZ(-180deg);
+  animation: rotateZ2 5s linear infinite;
+}
+
+@keyframes rotateZ1 {
+  from {
+    transform: rotateY(90deg) rotateZ(0deg);
+  }
+  to {
+    transform: rotateY(90deg) rotateZ(360deg);
+  }
+}
+
+
+@keyframes rotateZ2 {
+  from {
+    transform: rotateZ(-180deg);
+  }
+  to {
+    transform: rotateZ(180deg);
+  }
+}
+
+@keyframes rotateWrap {
+  0% {
+    transform: rotateX(0deg) rotateZ(0deg) rotateY(20deg);
+  }
+  
+  100% {
+    transform: rotateX(360deg) rotateZ(360deg) rotateY(20deg);
+  }
+}
